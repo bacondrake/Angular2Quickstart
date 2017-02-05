@@ -1,3 +1,6 @@
+/* css stays scoped to this component, so you could have classes with the same name in another component and
+	 the similarly named classes won't affect each other */
+
 .description {
 	color: #444;
 	font-size: small;

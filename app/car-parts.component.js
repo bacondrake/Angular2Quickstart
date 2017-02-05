@@ -9,38 +9,13 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
+var mocks_1 = require('./mocks');
 var CarPartsComponent = (function () {
     function CarPartsComponent() {
-        this.carParts = [{
-                "id": 1,
-                "name": "Super Tires",
-                "description": "These tires are the very best",
-                "inStock": 5,
-                "price": 4.99
-            },
-            {
-                "id": 2,
-                "name": "Reinforced Shocks",
-                "description": "Shocks made from Kryptonite",
-                "inStock": 4,
-                "price": 9.99
-            },
-            {
-                "id": 3,
-                "name": "NOS button",
-                "description": "Gives you the boost you need to win respect on the streets",
-                "inStock": 0,
-                "price": 16.99
-            },
-            {
-                "id": 4,
-                "name": "Padded seats",
-                "description": "Super soft seats for a smooth ride",
-                "inStock": 1,
-                "price": 8.99
-            }
-        ];
     }
+    CarPartsComponent.prototype.ngOnItit = function () {
+        this.carParts = mocks_1.CARPARTS; // make array of data the application pulls from carParts come from the mock data, which uses the const CARPARTS
+    };
     // See commented out lines below for how this method works
     // Using ES2015 =>
     CarPartsComponent.prototype.totalCarParts = function () {

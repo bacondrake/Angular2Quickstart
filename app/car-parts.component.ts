@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { CarPart } from './car-part';
+import { CARPARTS } from './mocks';
 
 @Component({
   selector: 'car-parts',
@@ -6,35 +8,11 @@ import { Component } from '@angular/core';
   styleUrls:[ 'app/car-parts.component.css' ]
 })
 export class CarPartsComponent  { 
-	carParts = [{
-		"id": 1,
-		"name": "Super Tires",
-		"description": "These tires are the very best",
-		"inStock": 5,
-		"price": 4.99
-	},
-	{
-		"id": 2,
-		"name": "Reinforced Shocks",
-		"description": "Shocks made from Kryptonite",
-		"inStock": 4,
-		"price": 9.99
-	},
-	{
-		"id": 3,
-		"name": "NOS button",
-		"description": "Gives you the boost you need to win respect on the streets",
-		"inStock": 0,
-		"price": 16.99
-	},
-	{
-		"id": 4,
-		"name": "Padded seats",
-		"description": "Super soft seats for a smooth ride",
-		"inStock": 1,
-		"price": 8.99
+	carParts: CarPart[]; // find all this data in mocks.ts - keeps the file clean
+
+	ngOnItit() { // initializes property values, makes it easier to test
+		this.carParts = CARPARTS; // make array of data the application pulls from carParts come from the mock data, which uses the const CARPARTS
 	}
-	];
 
 	// See commented out lines below for how this method works
 	
