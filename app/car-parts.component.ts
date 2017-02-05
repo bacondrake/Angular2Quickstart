@@ -10,7 +10,7 @@ import { CARPARTS } from './mocks';
 export class CarPartsComponent  { 
 	carParts: CarPart[]; // find all this data in mocks.ts - keeps the file clean
 
-	ngOnItit() { // initializes property values, makes it easier to test
+	ngOnInit() { // initializes property values, makes it easier to test
 		this.carParts = CARPARTS; // make array of data the application pulls from carParts come from the mock data, which uses the const CARPARTS
 	}
 

@@ -13,7 +13,7 @@ var mocks_1 = require('./mocks');
 var CarPartsComponent = (function () {
     function CarPartsComponent() {
     }
-    CarPartsComponent.prototype.ngOnItit = function () {
+    CarPartsComponent.prototype.ngOnInit = function () {
         this.carParts = mocks_1.CARPARTS; // make array of data the application pulls from carParts come from the mock data, which uses the const CARPARTS
     };
     // See commented out lines below for how this method works
