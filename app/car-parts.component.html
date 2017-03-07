@@ -1,14 +1,19 @@
 <p>There are {{totalCarParts()}} total parts in stock.</p>
 <div class="parts-list" *ngFor="let carPart of carParts" [class.featured]="carPart.featured">
-	<div class="photo">
-		<img [src]="carPart.image">
-	</div>
-	<div class="product-info">
-		<p *ngIf="carPart.featured" class="feature-item">Featured</p>
-  	<h2>{{carPart.name | uppercase}}</h2>
-  	<p class="description">{{carPart.description}}</p>
-  	<p class="price">{{carPart.price | currency:'USD':true}}</p>
-  	<p class="in-stock" *ngIf="carPart.inStock > 0">{{carPart.inStock}} in stock</p>
-  	<p class="out-of-stock" *ngIf="carPart.inStock === 0">Out of stock</p>
-	</div>
+  <div class="photo">
+    <img [src]="carPart.image">
+  </div>
+  <div class="product-info">
+    <p *ngIf="carPart.featured" class="feature-item">Featured</p>
+    <h2>{{carPart.name | uppercase}}</h2>
+    <p class="description">{{carPart.description}}</p>
+    <p class="price">{{carPart.price | currency:'USD':true}}</p>
+    <div class="select-quantity" *ngIf="carPart.inStock > 0">
+      <button class="decrease" (click)="downQuantity(carPart)">-</button>
+      {{carPart.quantity}}
+      <button class="increase" (click)="upQuantity(carPart)">+</button>
+    </div>
+    <p class="in-stock" *ngIf="carPart.inStock > 0">{{carPart.inStock}} in stock</p>
+    <p class="out-of-stock" *ngIf="carPart.inStock === 0">Out of stock</p>
+  </div>
 </div>

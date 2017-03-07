@@ -22,6 +22,28 @@ var CarPartsComponent = (function () {
         return this.carParts.reduce(function (prev, current) { return prev + current.inStock; }, 0);
     };
     ;
+    // Same as above with different, slightly older style formatting
+    // totalCarParts() {
+    //  return this.carParts.reduce(function(prev, current) {return prev + current.inStock; }, 0);
+    // }
+    // Same as above, a little more readable and a traditional method style
+    // totalCarParts() {
+    //  let sum = 0;
+    //  for(let carPart of this.carParts) {
+    //    sum += carPart.inStock;
+    //  }
+    //  return sum;
+    // }
+    CarPartsComponent.prototype.upQuantity = function (carPart) {
+        if (carPart.quantity < carPart.inStock) {
+            carPart.quantity++;
+        }
+    };
+    CarPartsComponent.prototype.downQuantity = function (carPart) {
+        if (carPart.quantity > 0) {
+            carPart.quantity--;
+        }
+    };
     CarPartsComponent = __decorate([
         core_1.Component({
             selector: 'car-parts',

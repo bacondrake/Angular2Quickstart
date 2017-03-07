@@ -1,54 +1,62 @@
 /* css stays scoped to this component, so you could have classes with the same name in another component and
-	 the similarly named classes won't affect each other */
+   the similarly named classes won't affect each other */
 
 .description {
-	color: #66d9f7;
-	font-size: small;
+  color: #66d9f7;
+  font-size: small;
 }
 
 .featured {
-	background-color: #57595D !important;
-	-webkit-border-image: -webkit-linear-gradient(right, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
-	     -o-border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
-	        border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
-	border-image-slice: 1;
+  background-color: #57595D !important;
+  -webkit-border-image: -webkit-linear-gradient(right, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
+       -o-border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
+          border-image: linear-gradient(to left, #818fd8 0%, #cbb4e2 50%, #a6f2f5 100%);
+  border-image-slice: 1;
 }
 
 .feature-item {
-	 font-size:small; 
-	 float:right; 
-	 color:#ed5111
+   font-size:small;
+   float:right;
+   color:#ed5111
 }
 
 .in-stock {
-	color: #9397d8;
+  color: #9397d8;
 }
 
 .out-of-stock {
-	color:#ed5111;	
+  color:#ed5111;
 }
 
 .photo {
-	float: left;
-	vertical-align: middle;
-	margin-right: 15px;
+  float: left;
+  vertical-align: middle;
+  margin-right: 15px;
 }
 
 /*Never mind this is not a good way to do it*/
 .photo img {
-	width: 200px;
-	height:173px;
+  width: 200px;
+  height:173px;
 }
 
 .price {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .product-info {
-	margin-left: 15px;
-	padding: 0.2em 1em;
+  margin-left: 15px;
+  padding: 0.2em 1em;
 }
 .parts-list {
-	background-color: #24262c;
-	margin: 1em 0;
+  background-color: #24262c;
+  margin: 1em 0;
+}
+
+.select-quantity button {
+  width: 25px;
+  height:25px;
+  margin: 5px;
+  border: 1px solid #fff;
+  background-color: #000;
 }

@@ -6,7 +6,8 @@ exports.CARPARTS = [{
         "inStock": 5,
         "price": 4.99,
         "image": "/images/tire.jpg",
-        "featured": false
+        "featured": false,
+        "quantity": 0
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@ exports.CARPARTS = [{
         "inStock": 4,
         "price": 9.99,
         "image": "/images/shocks.jpg",
-        "featured": false
+        "featured": false,
+        "quantity": 0
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@ exports.CARPARTS = [{
         "inStock": 0,
         "price": 16.99,
         "image": "/images/nos.jpg",
-        "featured": true
+        "featured": true,
+        "quantity": 0
     },
     {
         "id": 4,
@@ -33,7 +36,8 @@ exports.CARPARTS = [{
         "inStock": 1,
         "price": 8.99,
         "image": "/images/seats.jpg",
-        "featured": false
+        "featured": false,
+        "quantity": 0
     }
 ];
 //# sourceMappingURL=mocks.js.map
