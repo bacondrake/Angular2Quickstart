@@ -60,3 +60,9 @@
   border: 1px solid #fff;
   background-color: #000;
 }
+
+.select-quantity input {
+  width: 20px;
+  height: 16px;
+  text-align:center;
+}
